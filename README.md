@@ -1,4 +1,4 @@
-# LLM with Honor Of Kings, one of the most popular smart phone games
+# Text data of Honor Of Kings, one of the most popular smart phone games for LLM training and finetuning
 
 Details to about this project, please refer to the following two ZhiHu Links
 
