@@ -1,4 +1,26 @@
-# HoK multi-modal toy data
+# HoK multi-modal toy dataset
+
+This **Multi-modal Dataset** inculdes **images, text and audios** from a mobile game, **Honor of Kings** which is one of the most popular smart phone games.
+
+`王者荣耀故事英雄与技能-toy.xlsx` contains the main **text** data of details of each heros. As a toy dataset, I just upload the data of 4 heros (`安琪拉`, `艾琳`, `阿古朵` and `阿轲`)
+
+`英雄Q版头像`, `英雄档案图片` and `英雄海报` are folders containing different kinds of **images** of these heros.
+
+`英雄语音和对应台词` is the folders contraining the corresponding **voices**(**audio**) and **voice lines**(**text**) for each skin of each hero. (Some skins don't have corresponding voices and they use the voices and voice lines of their default skin.)
+
+### Default skins of each hero
+    ├───安琪拉
+    │   └───暗夜萝莉
+    ├───艾琳
+    │   └───精灵之舞
+    ├───阿古朵
+    │   └───山林之子
+    └───阿轲
+        └───信念之刃
+
+There are some numbers such as 116 in '116_阿轲__迷踪丽影' and 142 in '142_安琪拉_东瞰扶胥选自广东通志.mp3'. These numbers are related to the index of heros, you could ignore it since I provided the text in Chinese of each heros.
+
+I may consider to upload more data later.
 
 ## Simple File Structures
 
