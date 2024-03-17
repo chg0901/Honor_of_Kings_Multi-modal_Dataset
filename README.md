@@ -1,10 +1,14 @@
 # Multi-modal Dataset from Honor of Kings
+
 A Multi-modal Dataset from mobile game, Honor of Kings (one of the most popular smart phone games) 
 
 
 
 ## Multi-modal Dataset from Honor of Kings
-[HoK_multi-modal_toy_data](https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/tree/main/HoK_multi-modal_toy_data)
+
+[HoK_multi-modal_toy_data **English** readme_EN](./HoK_multi-modal_toy_data/readme_EN.md)
+
+[HoK_multi-modal_toy_data **中文** readme](./HoK_multi-modal_toy_data/readme.md)
 
 ## Text data of Honor of Kings
 [text_data](https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/tree/main/text_data)
