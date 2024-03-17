@@ -1,14 +1,13 @@
-# Multi-modal Dataset from Honor of Kings
+# Multi-modal RAG Project with Dataset from Honor of Kings
 
-A Multi-modal Dataset from mobile game, Honor of Kings (one of the most popular smart phone games) 
-
+A Multi-modal RAG Project with Dataset from Honor of Kings, one of the most popular smart phone games in China
 
 
 ## Multi-modal Dataset from Honor of Kings
 
-[HoK_multi-modal_toy_data **English** readme_EN](./HoK_multi-modal_toy_data/readme_EN.md)
+[HoK_multi-modal_toy_data readme_EN (**English**)](./HoK_multi-modal_toy_data/readme_EN.md)
 
-[HoK_multi-modal_toy_data **中文** readme](./HoK_multi-modal_toy_data/readme.md)
+[HoK_multi-modal_toy_data readme (**中文**)](./HoK_multi-modal_toy_data/readme.md)
 
 
 ### Simple File Structures
