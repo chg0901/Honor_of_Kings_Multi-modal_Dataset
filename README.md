@@ -10,6 +10,43 @@ A Multi-modal Dataset from mobile game, Honor of Kings (one of the most popular 
 
 [HoK_multi-modal_toy_data **中文** readme](./HoK_multi-modal_toy_data/readme.md)
 
+
+### Simple File Structures
+
+```bash
+│   王者荣耀故事英雄与技能-toy.xlsx
+├───英雄Q版头像
+├───英雄档案图片
+├───英雄海报
+├───英雄皮肤
+│   ├───安琪拉
+│   ├───艾琳
+│   ├───阿古朵
+│   └───阿轲
+└───英雄语音和对应台词
+    ├───安琪拉
+    │   ├───142_安琪拉__乘龙·聚宝船
+    │   ├───142_安琪拉__心灵骇客   
+    │   ├───142_安琪拉__时之奇旅
+    │   ├───142_安琪拉__暗夜萝莉
+    │   ├───142_安琪拉__追逃游戏
+    │   └───142_安琪拉__魔法小厨娘
+    ├───艾琳
+    │   ├───155_艾琳__奇遇舞章
+    │   ├───155_艾琳__精灵之舞
+    │   └───155_艾琳__觅芳踪
+    ├───阿古朵
+    │   ├───533_阿古朵__山林之子
+    │   ├───533_阿古朵__江河有灵
+    │   └───533_阿古朵__顽趣
+    └───阿轲
+        ├───116_阿轲__信念之刃
+        ├───116_阿轲__暗夜猫娘
+        ├───116_阿轲__节奏热浪
+        └───116_阿轲__迷踪丽影
+
+```
+
 ## Text data of Honor of Kings
 [text_data](https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/tree/main/text_data)
 
