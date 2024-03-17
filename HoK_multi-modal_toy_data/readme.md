@@ -8,6 +8,24 @@
 
 - `英雄语音和对应台词`是包含每个英雄每种皮肤对应的**语音**（**音频**）和**台词**（**文本**）的文件夹。 （有些皮肤没有对应的声音，使用默认皮肤的声音和台词。）
 
+<div align="center">
+<img src="https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/assets/8240984/c3948f38-b6d7-4150-ba7f-b6b08b727332"/>
+</div>
+
+<div align="center">
+<img src="https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/assets/8240984/14012828-8334-4e88-8d11-e47006ef98f0" width="40%"/>
+<img src="https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/assets/8240984/41a9f546-d583-423e-99c3-aec4f148af5f" width="40%"/>
+    
+<img src="https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/assets/8240984/4ca869d2-ef9f-480f-b31f-34732ea2c548" width="80%"/>
+</div>
+
+<div align="center">
+<img src="https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/assets/8240984/ff032e47-087a-4c4c-911b-4419cfb68f7b" width="40%"/>
+<img src="https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/assets/8240984/0f77a327-4124-4f0d-a9a2-e4cecd0fb8fb" width="40%"/>
+</div>
+
+
+
 ### 各个英雄的默认皮肤
     ├───安琪拉
     │   └───暗夜萝莉
