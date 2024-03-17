@@ -1,4 +1,14 @@
-# Text data of Honor Of Kings, one of the most popular smart phone games for LLM training and finetuning
+# Multi-modal Dataset from Honor of Kings
+A Multi-modal Dataset from mobile game, Honor of Kings 
+
+## Future Plans
+
+I will try to use this data to play with InternLM using RAG techs
+
+
+
+
+## Text data of Honor Of Kings, one of the most popular smart phone games for LLM training and finetuning
 
 Details to about this project, please refer to the following two ZhiHu Links
 
