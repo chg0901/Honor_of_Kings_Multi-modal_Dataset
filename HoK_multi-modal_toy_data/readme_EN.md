@@ -1,6 +1,6 @@
 # HoK multi-modal toy dataset
 
-This **Multi-modal Dataset** inculdes **images, text and audios** from a mobile game, **Honor of Kings** which is one of the most popular smart phone games in China.
+This **Multi-modal Dataset** inculdes **images, text and audios** from a mobile game, **Honor of Kings**, which is one of the most popular smart phone games in China.
 
 - `王者荣耀故事英雄与技能-toy.xlsx` contains the main **text** data of details of each heros. As a toy dataset, I just upload the data of 4 heros (`安琪拉`, `艾琳`, `阿古朵` and `阿轲`)
 
