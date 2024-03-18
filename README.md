@@ -49,6 +49,15 @@ A Multi-modal RAG Project with Dataset from Honor of Kings, one of the most popu
 ## Text data of Honor of Kings
 [text_data](https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/tree/main/text_data)
 
+## Join the second phase of the InternLM·Puyu Large Model Practical Camp and let's develop this project together.
+
+We are excited to welcome new members. You can scan the QR code to participate in the latest course, where we can learn and exchange ideas together.
+
+<div align="center">
+<img src="https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/assets/8240984/9f15fa5c-fa4d-4e91-80e9-3419e43df182" width="40%"/>
+</div>
+
+
 ## Future Plans
 
 I will try to use this data to play with **InternLM** using **LLM finetuning** and **RAG** techs 
