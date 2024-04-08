@@ -11,8 +11,8 @@
 
 数据[processed.jsonl](./processed.jsonl)和[processed2.jsonl](./processed2.jsonl)的原始数据
 
-  - 处理代码为[text_processing. py](./text_processing.py) 和 [text_processing3.py](./text_processing3.py) .
-  - 是 XTuner 用于微调手机游戏《王者荣耀》英雄属性搜索的 LLM 模型的两个版本的文本数据。
+- 处理代码为[text_processing. py](./text_processing.py) 和 [text_processing3.py](./text_processing3.py) 
+- 是 XTuner 用于微调手机游戏《王者荣耀》英雄属性搜索的 LLM 模型的两个版本的文本数据。
 
 ## 如何使用
 
