@@ -21,14 +21,14 @@ A Multi-modal RAG Project with Dataset from Honor of Kings, one of the most popu
 |   tree.txt
 |   tree_simple.txt
 |
-+---王者荣耀KPL历年比赛数据              # 新增
++---王者荣耀KPL历年比赛数据              # new
 |       README.md
 |       WZRY.csv
 |
-+---王者荣耀攻略                        # 新增
++---王者荣耀攻略                        # new
 |       WZtrick.jsonl 
 |
-+---crawler_data                       # 新增
++---crawler_data                       # new
 |       image_0.jpg
 |       image_1.jpg
 ......
