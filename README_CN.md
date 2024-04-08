@@ -8,6 +8,89 @@
 
 [HoK_multi-modal_toy_data 阅读文档 (**中文**)](./HoK_multi-modal_toy_data/readme.md)
 
+[**兄弟项目**：王者荣耀 对局策略推荐小助手-LLM](https://github.com/YuWangyin/-LLM)
+
+### 数据调整（含兄弟项目数据引入）
+
+```bash
+.
+|   README.md
+|   README_CN.md
+|   tree.txt
+|   tree_simple.txt
+|
++---王者荣耀KPL历年比赛数据              # 新增
+|       README.md
+|       WZRY.csv
+|
++---王者荣耀攻略                        # 新增
+|       WZtrick.jsonl 
+|
++---crawler_data                       # 新增
+|       image_0.jpg
+|       image_1.jpg
+......
+|       pvp_picture_picture1.jpg
+......
+|       text_content.csv
+|     
++---HoK_multi-modal_toy_data
+|   |   readme.md
+|   |   readme_EN.md
+|   |
+|   +---英雄Q版头像
+|   |
+|   +---英雄档案图片
+|   |       
+|   +---英雄海报
+|   |
+|   \---英雄语音和对应台词
+|       |   readme.md
+|       |
+|       +---安琪拉
+|       |   |   142_安琪拉__乘龙·聚宝船.txt
+|       |   |   142_安琪拉__心灵骇客.txt
+|       |   |   142_安琪拉__时之奇旅.txt
+|       |   |   142_安琪拉__暗夜萝莉.txt
+|       |   |   142_安琪拉__追逃游戏.txt
+|       |   |   142_安琪拉__魔法小厨娘.txt
+|       |   |   readme.md
+|       |   |
+|       |   +---142_安琪拉__乘龙·聚宝船
+...................
+|       |   |       142_安琪拉_西望灵洲选自广东通志.mp3
+|       |   |       142_安琪拉_问尔能奈浪涛何.mp3
+|       |   |       142_安琪拉_顺风得利,祀海祈祥.mp3
+|       |   |       142_安琪拉_须知黄金未是宝,机勇情义胜珠珍改编自王梵.mp3
+|       |   |       142_安琪拉_驾海相迎.mp3
+|       |   |
+|       |   +---142_安琪拉__心灵骇客
+|       |   |
+|       |   +---142_安琪拉__时之奇旅
+|       |   |
+|       |   +---142_安琪拉__暗夜萝莉
+|       |   |
+|       |   +---142_安琪拉__追逃游戏
+|       |   |
+|       |   \---142_安琪拉__魔法小厨娘
+|       |
+|       +---艾琳
+|       |
+|       +---阿古朵
+|       |
+|       \---阿轲
+|
+\---text_data
+        OriginalData_inChinese.xlsx
+        processed.jsonl
+        processed2.jsonl
+        README.md
+        README_CN.md
+        text_processing.py
+        text_processing3.py
+
+```
+
 ### 简单文件结构
 
 ```bash

@@ -2,13 +2,17 @@
 
 ## 数据介绍
 
-目前，此文件夹中有两个 [processed.jsonl](./processed.jsonl) 和 [processed2.jsonl](./processed2.jsonl) 数据集。 
+目前，此文件夹中有三个数据集，包括 [OriginalData_inChinese.xlsx](./OriginalData_inChinese.xlsx)， [processed.jsonl](./processed.jsonl) 和 [processed2.jsonl](./processed2.jsonl) 。
 
-数据[OriginalData_inChinese.xlsx](./OriginalData_inChinese.xlsx)是生成[processed.jsonl](./processed.jsonl)和[processed2.jsonl](./processed2.jsonl)的原始数据，
+数据[OriginalData_inChinese.xlsx](./OriginalData_inChinese.xlsx)
 
-处理代码为[text_processing. py](./text_processing.py) 和 [text_processing3.py](./text_processing3.py) .
+- 是生成[processed.jsonl](./processed.jsonl)和[processed2.jsonl](./processed2.jsonl)的原始数据
+- 包含每个英雄详细信息的主要**文本**数据。  作为一个示例数据集，这里只上传了4个英雄的数据
 
-它们是 Xtuner 用于微调手机游戏《王者荣耀》英雄属性搜索的 LLM 模型的两个版本的文本数据。 
+数据[processed.jsonl](./processed.jsonl)和[processed2.jsonl](./processed2.jsonl)的原始数据
+
+  - 处理代码为[text_processing. py](./text_processing.py) 和 [text_processing3.py](./text_processing3.py) .
+  - 是 XTuner 用于微调手机游戏《王者荣耀》英雄属性搜索的 LLM 模型的两个版本的文本数据。
 
 ## 如何使用
 
