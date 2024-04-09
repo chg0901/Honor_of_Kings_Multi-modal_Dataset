@@ -2,7 +2,7 @@
 
 A Multi-modal RAG Project with Dataset from Honor of Kings, one of the most popular smart phone games in China
 
-[**We NEED you** ](https://github.com/InternLM/Tutorial/discussions/594) in discussion of [InternLM](https://github.com/InternLM/InternLM) , which is [**《王者荣耀》多模态问答助手 【RAG】【AGENT】【RolePlay】【Deploy】【MultiModal】)** in Chinese](https://github.com/InternLM/Tutorial/discussions/594)
+[**We NEED you**](https://github.com/InternLM/Tutorial/discussions/594) in discussion of [InternLM](https://github.com/InternLM/InternLM) , which is [**《王者荣耀》多模态问答助手 【RAG】【AGENT】【RolePlay】【Deploy】【MultiModal】)** in Chinese](https://github.com/InternLM/Tutorial/discussions/594)
 
 ## Multi-modal Dataset from Honor of Kings
 

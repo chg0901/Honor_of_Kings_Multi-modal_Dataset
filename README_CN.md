@@ -4,11 +4,15 @@
 
 ## 来自王者荣耀的多模态数据集
 
-[HoK_multi-modal_toy_data 阅读文档 (**英文**)](./HoK_multi-modal_toy_data/readme_EN.md)
+[HoK_multi-modal_toy_data 文档 (**英文**)](./HoK_multi-modal_toy_data/readme_EN.md)
 
-[HoK_multi-modal_toy_data 阅读文档 (**中文**)](./HoK_multi-modal_toy_data/readme.md)
+[HoK_multi-modal_toy_data 文档 (**中文**)](./HoK_multi-modal_toy_data/readme.md)
 
 [**兄弟项目**：王者荣耀 对局策略推荐小助手-LLM](https://github.com/YuWangyin/-LLM)
+
+[王者荣耀KPL历年比赛记录数据集(**中文**)](./王者荣耀KPL历年比赛数据/README.md)
+
+[王者荣耀攻略(**中文**)](./王者荣耀攻略/README.md)
 
 ### 数据调整（含兄弟项目数据引入）
 
@@ -127,9 +131,10 @@
 ```
 
 ## 王者荣耀文本数据
+
 [文本数据](https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/tree/main/text_data)  
 
-## 加入InternLM·Puyu大模型实战营第二阶段，让我们一起开发这个项目。
+## 加入InternLM·浦语书生大模型实战营第二阶段，让我们一起开发这个项目
 
 我们非常期待新成员的加入。您可以扫描二维码参与最新的课程，在那里我们可以一起学习和交流想法。
 
