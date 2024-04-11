@@ -23,6 +23,14 @@
 </div>
 
 
+### 在线试听蔡文姬原皮语音
+
+[**王者荣耀 蔡文姬原皮语音**](https://www.bilibili.com/audio/am33707486)
+
+![image](https://github.com/InternLM/Tutorial/assets/8240984/f6fe7707-f28e-4caf-a9c4-9b09140de98a)
+
+![c2e5ae9bee6087db733848723cca081](https://github.com/InternLM/Tutorial/assets/8240984/b3f77f02-28d9-473c-87a2-9a0920020ccd)
+
 
 ### 各个英雄的默认皮肤
     ├───安琪拉
