@@ -8,13 +8,13 @@
 
 [HoK_multi-modal_toy_data 文档 (**中文**)](./HoK_multi-modal_toy_data/readme.md)
 
-[**兄弟项目**：王者荣耀 对局策略推荐小助手-LLM](https://github.com/YuWangyin/-LLM)
+[**兄弟项目HoK-BP-LLM**：王者荣耀 对局策略推荐小助手](https://github.com/YuWangyin/HoK-BP-LLM)
 
-[王者荣耀KPL历年比赛记录数据集(**中文**)](./王者荣耀KPL历年比赛数据/README.md)
+- [王者荣耀KPL历年比赛记录数据集(**中文**)](./王者荣耀KPL历年比赛数据/README.md)
 
 [王者荣耀攻略(**中文**)](./王者荣耀攻略/README.md)
 
-### 数据调整（含兄弟项目数据引入）
+### 数据调整（含兄弟项目[HoK-BP-LLM](https://github.com/YuWangyin/HoK-BP-LLM)数据引入）
 
 ```bash
 .

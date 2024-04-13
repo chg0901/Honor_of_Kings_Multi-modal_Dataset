@@ -10,9 +10,9 @@ A Multi-modal RAG Project with Dataset from Honor of Kings, one of the most popu
 
 [HoK_multi-modal_toy_data readme (**中文**)](./HoK_multi-modal_toy_data/readme.md)
 
-[**HoK-LLM**: Our Team's second repo](https://github.com/YuWangyin/HoK-LLM)
+[**HoK-BP-LLM**: Our Team's second repo](https://github.com/YuWangyin/HoK-BP-LLM)
 
-### More Data From [HoK-LLM](https://github.com/YuWangyin/HoK-LLM)
+### More Data From [HoK-BP-LLM](https://github.com/YuWangyin/HoK-BP-LLM)
 
 ```bash
 .
