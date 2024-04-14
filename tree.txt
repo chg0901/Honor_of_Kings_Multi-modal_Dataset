@@ -605,5 +605,11 @@
 |       README.md
 |       WZRY.csv
 |
-\---王者荣耀攻略
-        WZtrick.jsonl
++---王者荣耀攻略
+|        WZtrick.jsonl
+|
+\---王者英雄关系数据
+	img
+	README.md
+	resource.json
+	WZrelationship.json
