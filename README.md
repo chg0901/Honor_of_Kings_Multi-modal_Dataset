@@ -86,11 +86,12 @@ A Multi-modal RAG Project with Dataset from Honor of Kings, one of the most popu
 |
 \---text_data
         OriginalData_inChinese.xlsx
-        processed.jsonl
-        processed2.jsonl
+        processed_cn.jsonl
+        processed2_cn.jsonl
         README.md
         README_CN.md
         text_processing.py
+        text_processing2.py
         text_processing3.py
 
 ```
