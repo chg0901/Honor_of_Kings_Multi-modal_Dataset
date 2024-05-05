@@ -1,7 +1,7 @@
 import pandas as pd
 import json
 # 读取Excel文件
-df = pd.read_excel("王者荣耀故事英雄与技能4.xlsx")
+df = pd.read_excel("OriginalData_inChinese.xlsx")
 df = df.fillna('')
 columns = ['英雄', '被动名','被动介绍',
            '一技能名称', '一技能介绍',
