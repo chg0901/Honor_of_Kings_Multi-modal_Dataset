@@ -140,9 +140,8 @@ A Multi-modal RAG Project with Dataset from Honor of Kings, one of the most popu
 We are excited to welcome new members. You can scan the QR code to participate in the latest course, where we can learn and exchange ideas together.
 
 <div align="center">
-<img src="https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/assets/8240984/9f15fa5c-fa4d-4e91-80e9-3419e43df182" width="40%"/>
+<img src="https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/assets/8240984/aef4843d-a831-40ae-8d71-09d05367fb14" width="40%"/>
 </div>
-
 
 ## Future Plans
 
