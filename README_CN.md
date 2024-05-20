@@ -8,11 +8,11 @@
 
 [HoK_multi-modal_toy_data 文档 (**中文**)](./HoK_multi-modal_toy_data/readme.md)
 
-[**兄弟项目HoK-BP-LLM**：王者荣耀 对局策略推荐小助手](https://github.com/YuWangyin/HoK-BP-LLM)
+### 兄弟项目
 
-- [王者荣耀KPL历年比赛记录数据集(**中文**)](./王者荣耀KPL历年比赛数据/README.md)
-
-[王者荣耀攻略(**中文**)](./王者荣耀攻略/README.md)
+- [**Honor-of-Kings_RolePlay**：王者荣耀角色扮演聊天机器人](https://github.com/YongXie66/Honor-of-Kings_RolePlay) 
+- [**Honor-of-Kings_Agent**：王者荣耀助手: Agent对话](https://github.com/GoAlers/Honor-of-Kings_Agent)
+- [**HoK-BP-LLM**：王者荣耀 对局策略推荐小助手](https://github.com/YuWangyin/HoK-BP-LLM)
 
 ### 数据调整（含兄弟项目[HoK-BP-LLM](https://github.com/YuWangyin/HoK-BP-LLM)数据引入）
 
