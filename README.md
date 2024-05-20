@@ -10,9 +10,11 @@ A Multi-modal RAG Project with Dataset from Honor of Kings, one of the most popu
 
 [HoK_multi-modal_toy_data readme (**中文**)](./HoK_multi-modal_toy_data/readme.md)
 
-[**HoK-BP-LLM**: Our Team's **second** repo](https://github.com/YuWangyin/HoK-BP-LLM)
+[**Honor-of-Kings_RolePlay**: Our Team's **second** repo](https://github.com/YongXie66/Honor-of-Kings_RolePlay)
 
-[**Honor-of-Kings_RolePlay**: Our Team's **third** repo](https://github.com/YongXie66/Honor-of-Kings_RolePlay)
+[**Honor-of-Kings_Agent**: Our Team's **third** repo](https://github.com/GoAlers/Honor-of-Kings_Agent)
+
+[**HoK-BP-LLM**: Our Team's **fourth** repo](https://github.com/YuWangyin/HoK-BP-LLM)
 
 ### More Data From [HoK-BP-LLM](https://github.com/YuWangyin/HoK-BP-LLM)
 
