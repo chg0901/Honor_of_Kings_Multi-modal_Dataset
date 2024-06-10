@@ -16,7 +16,9 @@
 
 ## 目标
 
-基于**InternLM2**打造一个王者荣耀领域的角色扮演聊天机器人（以妲己为例）。将特定游戏角色的形象带入大语言模型，在实现**①知识输出**的同时，也实现**②角色扮演**行为
+基于xtuner微调🌟**InternLM2**打造一个王者荣耀领域的角色扮演聊天机器人（以妲己为例），同时结合🌟**ASR**技术实现语音输入、🌟**TTS**技术实现声音克隆和语音输出、🌟**数字人**技术实现视频输出。
+
+将特定游戏角色的形象带入大语言模型，在实现①知识输出的同时，也实现②角色扮演行为：
 
 > 1. **角色扮演**：使模型表现得像《王者荣耀》游戏里的英雄角色妲己
 >    - 了解妲己的角色背景和英雄故事
@@ -31,17 +33,15 @@
 - 模型在作出回答时同时结合妲己的语气口吻
 - 模型模拟妲己的声音，同步以音频形式输出回答内容
 
+## demo
+
+| 文字/语音对话 |              数字人回答               |
+| :-----------: | :-----------------------------------: |
+|    你好呀     | <video src="assets/demo.mp4"></video> |
+
 ## 行动
 
-> 1. **数据收集整理**
->    1. 文本（英雄故事背景、台词、英雄技能）
->    2. 语音
-> 2. **XTuner微调InternLM2**
-> 3. **语音模块**
->    1. 声音克隆、语音合成
->    2. 将语音模块和模型输出串联在一起
-
-### 数据集收集
+### 数据收集
 
 王者荣耀数据的收集，来源于**兄弟项目**[Honor_of_Kings_Multi-modal_Dataset](https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/)，欢迎大家前去star~
 
@@ -53,15 +53,10 @@
         |-- 上官婉儿.txt
         |-- 不知火舞.txt
         |-- 东皇太一.txt
-        |-- 云中君.txt
-        |-- 云缨.txt
         ... ...
     |-- 妲己Images/
         |-- 仙境爱丽丝.jpg
         |-- 女仆咖啡.jpg
-        |-- 妲己.jpg
-        |-- 妲己.png
-        |-- 少女阿狸.jpg
         |-- 时之奇旅.jpg
         ... ...
     |-- 妲己Texts/
@@ -76,13 +71,65 @@
         |-- 109_妲己__魅力之狐/
             |-- 109_妲己_妲己,一直爱主人,因为被设定成这样..wav
             |-- 109_妲己_妲己,陪你玩.wav
+            ... ...
 ```
 
+### 数据生成
 
+### 微调
 
-## 更新说明
+### ASR
 
-- **敬请期待...**
+### TTS
+
+### 数字人
+
+## 使用指南
+
+Clone the repo
+
+```bash
+git clone https://github.com/YongXie66/Honor-of-Kings_RolePlay.git
+```
+
+install the environment
+
+```bash
+conda create -n hok-roleplay python=3.10
+conda activate hok-roleplay
+
+pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
+
+pip install -r requirements.txt
+
+conda install -q ffmpeg
+```
+
+download models
+
+```bash
+# LLM 下载
+>>>from openxlab.model import download
+>>>download(model_repo=LLM_path,output='./InternLM2/InternLM2_7b')
+# or
+apt install git
+apt install git-lfs
+git clone https://code.openxlab.org.cn/shenfeilang/Honor-of-Kings_RolePlay.git InternLM2/InternLM2_7b/
+
+# gpt_sovits, sadtalker 模型下载
+>>>download(model_repo=vivid_path, output='./DaJi_RolePlay')
+
+# 模型位置移动
+mv ./DaJi_RolePlay/GPT_SoVITS/pretrained_models/* ./GPT_SoVITS/pretrained_models/
+mv ./DaJi_RolePlay/checkpoints/* ./checkpoints
+mv ./DaJi_RolePlay/gfpgan/* ./gfpgan/
+```
+
+WEBUI
+
+```bash
+python webui.py
+```
 
 
 
