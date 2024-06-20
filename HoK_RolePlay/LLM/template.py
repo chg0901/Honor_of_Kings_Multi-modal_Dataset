@@ -66,7 +66,6 @@ class LLMTemplate:
         Returns:
             str: 对话响应
         """
-        '''暂时不写api版本,与Linly-api相类似,感兴趣可以实现一下'''
         pass 
     
     def chat(self, system_prompt, message):

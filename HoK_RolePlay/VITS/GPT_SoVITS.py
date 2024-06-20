@@ -355,7 +355,7 @@ class GPT_SoVITS:
         else:
             self.vq_model = vq_model.to(device)
         self.vq_model.eval()
-        # print(self.vq_model.load_state_dict(dict_s2["weight"], strict=False))
+        print(self.vq_model.load_state_dict(dict_s2["weight"], strict=False))
     
     def predict(self, ref_wav_path, prompt_text, prompt_language, text, text_language, how_to_cut="不切", save_path = 'vits_res.wav'):
         print(ref_wav_path, prompt_text, prompt_language, text, text_language, how_to_cut)
