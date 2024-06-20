@@ -36,9 +36,10 @@
 - TTS 文字转语音＋语音克隆📢：模型模拟妲己的声音，并将LLM的回答以音频形式输出
 - 数字人👁：虚拟小狐仙在线陪伴
 
-## 📺demo
+### 📺demo
 
-**OpenXLab在线体验地址**：https://openxlab.org.cn/apps/detail/YongXie66/DaJi_RolePlay
+- **OpenXLab在线体验地址**：https://openxlab.org.cn/apps/detail/YongXie66/DaJi_RolePlay
+- **视频地址**：https://www.bilibili.com/video/BV1JuVJe1EqT
 
 效果示例：
 
@@ -46,14 +47,14 @@
 | :-----------: | :----------------------------------------------------------: |
 |    你知道如何应对压力吗     | <video src="https://github.com/YongXie66/Honor-of-Kings_RolePlay/assets/88486439/c27ebda4-8a96-45a3-841b-fc3de57602d6"></video> |
 
-## 📰News
+### 📰News
 
 - [2024.06.19] 语音输入支持速度更快、对中文更加友好的**FunASR**
 - [2024.06.16] 本项目初版完成！支持 **ASR + RAG + TTS + 数字人**
 
-## 行动
+### 行动
 
-### 🔎数据收集
+#### 🔎数据收集
 
 王者荣耀数据的收集，来源于**兄弟项目**[Honor_of_Kings_Multi-modal_Dataset](https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/)，欢迎大家前去star~
 
@@ -86,7 +87,7 @@
             ... ...
 ```
 
-### 🧾数据生成
+#### 🧾数据生成
 自我认知数据集使用大模型生成，由 【自我介绍 + 背景关系 + 打招呼用词 + 主要功能介绍】组成，其中自我介绍和背景关系部分参考的是妲己的 `性格特点`，`角色背景`， 以及 `英雄故事`。`打招呼用词` 以及 `主要功能介绍` 则是我们团队自己定义的，回答风格则是参考`妲己台词`。
 
 自我认知数据集例子：
@@ -110,28 +111,28 @@
 ]
 ```
 
-### 🧠InternLM2微调
+#### 🧠InternLM2微调
 
 本项目使用 [ Xtuner ](https://github.com/InternLM/xtuner)微调工具，采用多轮对话训练格式，对InternLM2_chat_7b模型进行QLoRa微调。数据集包含1000条左右多轮对话数据，通过QLoRa策略优化模型的对话生成能力。该策略利用量化低秩近似，提升了模型的效率和性能，使其更好地理解和生成自然流畅的对话。微调后的模型不仅能处理复杂对话情境，还能提供更个性化和知识性的回答，显著提升用户的互动体验。
 
-### 🎤自动语音识别(ASR)
+#### 🎤自动语音识别(ASR)
 
 ASR技术用于将用户的语音输入转换为文本。本项目支持用户通过麦克风在线录入音频，或者上传本地已有的音频文件。我们采用了开源的 [whisper](https://github.com/openai/whisper) 模型，该模型在多个语音识别任务上表现优异，能够高效、准确地将语音转化为文本。这些转换后的文本将作为输入，传递给LLM。
 
 [2024.06.19]更新：语音输入支持速度更快、对中文更加友好的FunASR
 
-### 📢文本转语音(TTS) + 语音克隆
+#### 📢文本转语音(TTS) + 语音克隆
 
 TTS技术可以将文本转化为自然的语音输出。在本项目中，我们集成了强大的少样本语音转换与语音克隆方法 [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)，利用其 `few-shot TTS`功能，通过收集王者荣耀英雄角色妲己的台词语音来微调 [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) 模型，实现了对妲己音色的克隆。能够将 LLM 输出的文本回答转换为语音，并以妲己的声音进行播报。
 
-### 👁数字人
+#### 👁数字人
 
 数字人技术使得虚拟角色可以以更真实的方式与用户互动。本项目集成了 [SadTalker](https://github.com/OpenTalker/SadTalker) 技术，一种从音频中学习生成3D运动系数，使用全新的3D面部渲染器来生成头部运动，并生成高质量的视频的方法。通过输入上一步 `TTS 输出的音频文件`以及`妲己的海报`，可以生成`动态说话视频`。这使得虚拟小狐仙不仅可以用文本、声音与用户交流，还可以以虚拟人的模式进行互动。
 
-### 📚RAG
+#### 📚RAG
 本项目采用的是基于 Langchain 的 `Metadata` RAG 方案。Metadata 结构是【英雄名 + 被动/一技能/二技能/三技能/英雄故事/历史】 ，例如：【上官婉儿二技能】，对应的 Document 就是 `技能名称` 和 `技能介绍`。RAG 由以下用户提问关键词触发：【"被动", "一技能", "二技能", "三技能", "英雄故事", "历史"】。
 
-## 使用指南
+### 使用指南
 
 Clone the repo
 
@@ -179,7 +180,7 @@ Web UI 启动 !
 python webui.py
 ```
 
-## web UI
+### web UI
 
 目前 Web UI 中提供了**Chatty_DaJi** 和 **Lively_DaJi** 两种对话模式
 
@@ -191,7 +192,7 @@ python webui.py
 
 ![image-20240614000226211](./HoK_RolePlay/assets/image-20240614000226211.png)
 
-## 项目成员
+### 项目成员
 
 |      | 成员                                        | 贡献                                                         |
 | ---- | ------------------------------------------- | ------------------------------------------------------------ |
@@ -200,7 +201,7 @@ python webui.py
 | 共创 | [Wong Tack Hwa](https://github.com/tackhwa) | RAG部分开发，整体项目测试 |
 | 共创 | [沈飞](https://github.com/shenfeilang)      | 王者荣耀相关数据集爬取；微调数据集生成与预处理；角色扮演模型微调与量化 |
 
-## 💖致谢
+### 💖致谢
 
 感谢上海人工智能实验室推出的 **[书生·浦语大模型实战营](https://openxlab.org.cn/models/InternLM/subject)** 学习活动！
 
