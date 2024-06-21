@@ -48,4 +48,6 @@ peft
 deepspeed
 torchaudio
 openxlab
+langchain==0.1.8
+chromadb==0.5.0
 # gfpgan

@@ -5,6 +5,7 @@ import time
 from zhconv import convert
 from LLM import LLM
 from src.cost_time import calculate_time
+from rag.interface import load_chain
 import pdb
 os.environ["GRADIO_TEMP_DIR"]= './temp'
 os.environ["WEBUI"] = "true"
@@ -71,7 +72,7 @@ def TTS_response(text,
 def LLM_response(question_audio, question, 
                  inp_ref = None, prompt_text = "", prompt_language = "", text_language = "", how_to_cut = "", 
                  tts_method = ''):
-    answer = llm.generate(question, default_system)
+    answer = check_and_response(default_system, question, history=[] ,contain_history=False)
     print(answer)
     driven_audio, driven_vtt = TTS_response(answer, 
                  inp_ref, prompt_text, prompt_language, text_language, how_to_cut, question_audio, question, 
@@ -126,11 +127,36 @@ def Talker_response_img(question_audio, method, text,
         return video, answer
 
 
-def chat_response(system, message, history):
+def chat_response(system, message):
     # response = llm.generate(message)
-    response, history = llm.chat(system, message, history)
-    print(history)
-    # 流式输出
+    response = llm.generate(message, system)
+    return response
+
+def rag_response(message):
+    response=rag_qa_chain({"query": message})["result"]
+    return response
+
+def check_and_response(system, message, history, contain_history=False):
+    if any(element in message for element in hero_list) and any(element in message for element in ["被动", "一技能", "二技能", "三技能", "英雄故事", "历史"]):
+        response = rag_response(message)
+        response=response.replace('~', '\\~')
+    else:
+        response = chat_response(system, message)
+    history.append((message,response))
+
+    if contain_history:
+        return history
+    else:
+        return response
+
+def check_and_response_realtime(system, message, history):
+    if any(element in message for element in hero_list) and any(element in message for element in ["被动", "一技能", "二技能", "三技能", "英雄故事", "历史"]):
+        response = rag_response(message)
+        response=response.replace('~', '\\~')
+    else:
+        response = chat_response(system, message)
+    history.append((message,response))
+
     for i in range(len(response)):
         time.sleep(0.01)
         yield "", history[:-1] + [(message, response[:i+1])]
@@ -204,7 +230,7 @@ def app_chatty():
                     clear_history = gr.Button("🧹 清除历史对话")
                     
             # 设置按钮的点击事件。当点击时，调用上面定义的 函数，并传入用户的消息和聊天历史记录，然后更新文本框和聊天机器人组件。
-            sumbit.click(chat_response, inputs=[system_input, msg, chatbot], 
+            sumbit.click(check_and_response_realtime, inputs=[system_input, msg, chatbot], 
                          outputs=[msg, chatbot])
             
             # 点击后清空后端存储的聊天记录
@@ -311,13 +337,22 @@ def error_print(text):
 
 if __name__ == "__main__":
     llm_class = LLM(mode='offline')
+    with open('./datasets/王者荣耀英雄名单.txt', 'r', encoding='utf-8') as file:
+        hero_list = [line.strip() for line in file]
     try:
         llm = llm_class.init_model('InternLM2', 'InternLM2/InternLM2_7b', prefix_prompt=prefix_prompt)
         success_print("Success!!! LLM模块加载成功")
     except Exception as e:
         error_print(f"Error: {e}")
         error_print("如果使用InternLM2_DaJi，请先下载InternLM2模型和安装环境")
-    
+        
+    try:
+         rag_qa_chain=load_chain(llm.model,llm.tokenizer)
+         success_print("Success!!! RAG模块加载成功，默认使用InternLM2_DaJi模型")
+    except Exception as e:
+        error_print(f"Error: {e}")
+        error_print("如果使用InternLM2_DaJi，请先下载InternLM2模型和安装环境，以及langchain环境")
+
     try:
         from VITS import *
         vits = GPT_SoVITS()
