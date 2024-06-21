@@ -172,6 +172,9 @@ mv ./DaJi_RolePlay/GPT_SoVITS/pretrained_models/* ./GPT_SoVITS/pretrained_models
 mv ./DaJi_RolePlay/checkpoints/* ./checkpoints/
 mv ./DaJi_RolePlay/FunASR/* ./FunASR/
 mv ./DaJi_RolePlay/gfpgan/* ./gfpgan/
+
+# 生成 RAG 依赖的 Chroma 数据库
+python Honor-of-Kings_RolePlay/rag/generate_chroma_db.py
 ```
 
 Web UI 启动 !
