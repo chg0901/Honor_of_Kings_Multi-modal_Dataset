@@ -41,7 +41,9 @@
 
 - **OpenXLab在线体验地址**：https://openxlab.org.cn/apps/detail/YongXie66/DaJi_RolePlay
 - **视频地址**：https://www.bilibili.com/video/BV1JuVJe1EqT
-- **模型地址**：[openxlab/YongXie66/DaJi_RolePlay](https://openxlab.org.cn/models/detail/YongXie66/DaJi_RolePlay) & [shenfeilang/InterLM2_7b_roleplay](https://openxlab.org.cn/models/detail/shenfeilang/Honor-of-Kings_RolePlay)
+- **模型地址**：
+   - [**小狐仙角色扮演文字对话模型(基于InternLM2-Chat-7B):** shenfeilang/InternLM2_7b_roleplay](https://openxlab.org.cn/models/detail/shenfeilang/Honor-of-Kings_RolePlay)
+   - [**小狐仙角色扮演TTS模型(基于GPT-SoVITS):** YongXie66/DaJi_RolePlay](https://openxlab.org.cn/models/detail/YongXie66/DaJi_RolePlay) 
 
 效果示例：
 
