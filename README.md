@@ -40,6 +40,7 @@
 
 - **OpenXLab在线体验地址**：https://openxlab.org.cn/apps/detail/YongXie66/DaJi_RolePlay
 - **视频地址**：https://www.bilibili.com/video/BV1JuVJe1EqT
+- **模型地址**：[openxlab/YongXie66/DaJi_RolePlay](https://openxlab.org.cn/models/detail/YongXie66/DaJi_RolePlay) & [shenfeilang/InterLM2_7b_roleplay](https://openxlab.org.cn/models/detail/shenfeilang/Honor-of-Kings_RolePlay)
 
 效果示例：
 
@@ -156,16 +157,12 @@ conda install -q ffmpeg
 download models
 
 ```bash
-# LLM 下载
->>>from openxlab.model import download
->>>download(model_repo=LLM_path,output='./InternLM2/InternLM2_7b')
-# or
 apt install git
 apt install git-lfs
-git clone https://code.openxlab.org.cn/shenfeilang/Honor-of-Kings_RolePlay.git InternLM2/InternLM2_7b/
 
-# funasr, gpt_sovits, sadtalker 相关模型下载
+# LLM,funasr, gpt_sovits, sadtalker 相关模型下载
 git clone https://code.openxlab.org.cn/YongXie66/DaJi_RolePlay.git ./DaJi_RolePlay
+bash ./DaJi_RolePlay/InternLM2/InternLM2_7b/download.sh
 
 # 模型位置移动
 mv ./DaJi_RolePlay/GPT_SoVITS/pretrained_models/* ./GPT_SoVITS/pretrained_models/

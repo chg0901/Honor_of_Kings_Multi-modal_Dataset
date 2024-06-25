@@ -16,6 +16,8 @@
 
 ## 🔊介绍
 
+**项目主页**：[峡谷小狐仙--多模态角色扮演聊天小助手](https://github.com/YongXie66/Honor-of-Kings_RolePlay)
+
 本项目基于**书生浦语🌟InternLM2**模型，通过构造生成训练数据，采用**Xtuner微调**的方式，打造了一个**王者荣耀**领域的**角色扮演**聊天机器人--**峡谷小狐仙**，同时结合🌟**ASR**技术实现**语音输入**、🌟**RAG 检索增强生成**技术实现**生成王者英雄有关信息**、🌟**TTS**技术实现**声音克隆**和**语音输出**、🌟**数字人**技术实现了**视频输出**功能。**峡谷小狐仙**将王者荣耀手游中特定游戏角色妲己的形象带入书生浦语语言大模型，在实现①知识输出的同时，也实现②角色扮演的效果：
 
 1. **知识输出**：使**峡谷小狐仙**对话表现得像《王者荣耀》游戏专家一样，为使用者提供游戏相关的知识查询
@@ -25,7 +27,7 @@
    - 采用符合游戏人物妲己的性格特点、语气、行为方式和表达方式来回复问题
    - 目前实现了英雄妲己的角色扮演，以后会支持更多的英雄角色，也可以根据使用的需求设定创建属于自己的英雄，语音音色和添加特定的对话方式
 
-![Architecture](assets/Architecture.png)
+![Architecture](assets/tech_route4.svg)
 
 ### 功能亮点
 
@@ -37,7 +39,9 @@
 
 ## 📺demo
 
-**OpenXLab在线体验地址**：https://openxlab.org.cn/apps/detail/YongXie66/DaJi_RolePlay
+- **OpenXLab在线体验地址**：https://openxlab.org.cn/apps/detail/YongXie66/DaJi_RolePlay
+- **视频地址**：https://www.bilibili.com/video/BV1JuVJe1EqT
+- **模型地址**：[openxlab/YongXie66/DaJi_RolePlay](https://openxlab.org.cn/models/detail/YongXie66/DaJi_RolePlay) & [shenfeilang/InterLM2_7b_roleplay](https://openxlab.org.cn/models/detail/shenfeilang/Honor-of-Kings_RolePlay)
 
 效果示例：
 
@@ -154,22 +158,21 @@ conda install -q ffmpeg
 download models
 
 ```bash
-# LLM 下载
->>>from openxlab.model import download
->>>download(model_repo=LLM_path,output='./InternLM2/InternLM2_7b')
-# or
 apt install git
 apt install git-lfs
-git clone https://code.openxlab.org.cn/shenfeilang/Honor-of-Kings_RolePlay.git InternLM2/InternLM2_7b/
 
-# funasr, gpt_sovits, sadtalker 相关模型下载
+# LLM, funasr, gpt_sovits, sadtalker 相关模型下载
 git clone https://code.openxlab.org.cn/YongXie66/DaJi_RolePlay.git ./DaJi_RolePlay
+bash InternLM2/InternLM2_7b/download.sh
 
 # 模型位置移动
 mv ./DaJi_RolePlay/GPT_SoVITS/pretrained_models/* ./GPT_SoVITS/pretrained_models/
 mv ./DaJi_RolePlay/checkpoints/* ./checkpoints/
 mv ./DaJi_RolePlay/FunASR/* ./FunASR/
 mv ./DaJi_RolePlay/gfpgan/* ./gfpgan/
+
+# 生成 RAG 依赖的 Chroma 数据库
+python Honor-of-Kings_RolePlay/rag/generate_chroma_db.py
 ```
 
 Web UI 启动 !
