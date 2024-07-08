@@ -2,7 +2,9 @@
 
 基于王者荣耀（中国最受欢迎的智能手机游戏之一）数据集的多模态RAG项目
 
-## 项目参加2024浦源大模型系列挑战赛喜获三等奖!
+## 项目参加 2024浦源大模型系列挑战赛(夏季赛) 喜获 三等奖 !
+
+**松龄后裔 团队**  **《峡谷小狐仙-多模态角色扮演游戏助手》**
 
 ![三等奖](./240708Third_Prize.jpg)
 
@@ -13,7 +15,7 @@
 
 ## Honor of Kings - RolePlay
 
-### [**Honor-of-Kings_RolePlay：峡谷小狐仙 —— 多模态角色扮演小助手**](https://github.com/YongXie66/Honor-of-Kings_RolePlay)
+### [**Honor-of-Kings_RolePlay：峡谷小狐仙 —— 多模态角色扮演游戏助手**](https://github.com/YongXie66/Honor-of-Kings_RolePlay)
 
 - [本地路径：./HoK_RolePlay](./HoK_RolePlay)
 
