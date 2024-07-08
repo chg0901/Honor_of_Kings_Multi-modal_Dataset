@@ -2,6 +2,10 @@
 
 基于王者荣耀（中国最受欢迎的智能手机游戏之一）数据集的多模态RAG项目
 
+## 项目参加2024浦源大模型系列挑战赛喜获三等奖!
+
+![三等奖](./240708Third_Prize.jpg)
+
 ## 来自王者荣耀的多模态数据集
 
 - [HoK_multi-modal_toy_data 文档 (**英文**)](./HoK_multi-modal_toy_data/readme_EN.md)
