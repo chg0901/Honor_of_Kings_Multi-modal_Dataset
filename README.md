@@ -6,7 +6,37 @@
 
 **松龄后裔 团队**  **《峡谷小狐仙-多模态角色扮演游戏助手》**
 
+<!--
+![第三期课程tall](https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/assets/8240984/e550d6cf-a3fe-47ba-b351-5ef765e30472)
+![第三期课程](https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/assets/8240984/faa166c7-3097-4b91-a19e-ae05b6dafb68)
+
 ![三等奖](./240708Third_Prize.jpg)
+
+<div style="display: flex; align-items: flex-start;">
+  <img src="./240708Third_Prize.jpg" alt="Long Image" style="max-height: 200px; margin-right: 10px;">
+  <img src="https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/assets/8240984/faa166c7-3097-4b91-a19e-ae05b6dafb68" alt="Tall Image" style="max-height: 200px;">
+  <img src="https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/assets/8240984/e550d6cf-a3fe-47ba-b351-5ef765e30472" alt="Tall Image" style="max-height: 200px;">
+</div>
+-->
+<table>
+  <tr>
+    <td style="text-align: center;">
+      <img src="./240708Third_Prize.jpg" alt="Long Image" style="max-height: 400px; width: auto; display: block; margin: 0 auto;">
+       <p style="text-align: center;"> 欢迎右侧扫码加入第三期AI实战营，一起迭代开发王者项目！</p>
+       <p style="text-align: center;"> 微信请加 kwchg0901 , 并注明来意~</p>
+    </td>
+<!--      
+     <td style="text-align: center;">
+      <div style="text-align: center;">
+        <img src="https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/assets/8240984/faa166c7-3097-4b91-a19e-ae05b6dafb68" alt="Tall Image" style="display: block; margin: 0 auto;">
+      </div>
+    </td> 
+-->
+    <td style="text-align: center;">
+      <img src="https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/assets/8240984/e550d6cf-a3fe-47ba-b351-5ef765e30472" alt="Tall Image" style="max-height: 1100px; width: auto; display: block; margin: 0 auto;">
+    </td>
+  </tr>
+</table>
 
 ## 来自王者荣耀的多模态数据集
 
@@ -360,4 +390,11 @@ python webui.py
 关于这个数据集和未来项目的详细信息，请参考以下两个知乎链接
 
 1. [王者荣耀问答助手[大模型实战营 结题项目][更新更多数据，计划采用RAG方法进行多模态检索搜索查询]](https://zhuanlan.zhihu.com/p/683656455)  
-2. [XTuner 大模型单卡低成本微调实战[大模型实战营04]【最后是王者荣耀有关的项目】](https://zhuanlan.zhihu.com/p/682241646)  
+2. [XTuner 大模型单卡低成本微调实战[大模型实战营04]【最后是王者荣耀有关的项目】](https://zhuanlan.zhihu.com/p/682241646)
+
+## 兄弟项目， 欢迎关注
+
+1. [**Honor-of-Kings_RolePlay**](https://github.com/YongXie66/Honor-of-Kings_RolePlay)
+2. [**食神**](https://github.com/SmartFlowAI/TheGodOfCookery)
+3. [**EmoLLM**](https://github.com/SmartFlowAI/EmoLLM)
+4. [**矿途智护者**](https://github.com/yaosenJ/CoalQA)
