@@ -25,6 +25,18 @@ tiktoken
 protobuf==3.19.6
 google-api-python-client==2.126.0
 g4f
+transformers==4.34.0
+transformers_stream_generator==0.0.4 
+peft 
+deepspeed
+torchaudio
+openxlab
+langchain==0.1.8
+chromadb==0.5.0
+####
+-r VITS/requirements_vits.txt
+####
+#librosa==0.9.2
 numba==0.56.4
 pytorch-lightning
 ffmpeg-python
@@ -36,19 +48,11 @@ pypinyin
 pyopenjtalk
 g2p_en
 modelscope==1.10.0
+sentencepiece
 chardet
 PyYAML
 psutil
 jieba_fast
 jieba
 LangSegment
-transformers==4.34.0
-transformers_stream_generator==0.0.4 
-peft 
-deepspeed
-torchaudio
-openxlab
-langchain==0.1.8
-chromadb==0.5.0
--r VITS/requirements_vits.txt
 # gfpgan
