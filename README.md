@@ -1,57 +1,22 @@
-# 王者荣耀多模态RAG项目
+# Honor of Kings - RolePlay
 
-基于王者荣耀（中国最受欢迎的智能手机游戏之一）数据集的多模态RAG项目
+![img](datasets/妲己Images/时之奇旅.jpg)
 
-## 项目参加 2024浦源大模型系列挑战赛(夏季赛) 喜获 三等奖 !
+## 背景
 
-**松龄后裔 团队**  **《峡谷小狐仙-多模态角色扮演游戏助手》**
+王者荣耀是一款MOBA类国产游戏，王者荣耀中英雄众多，每个英雄都有自己鲜明的故事背景、性格特征、技能招式等，因此王者荣耀的有关数据包含了丰富的文本和语音，适合创建角色扮演聊天机器人。
 
-<!--
-![第三期课程tall](https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/assets/8240984/e550d6cf-a3fe-47ba-b351-5ef765e30472)
-![第三期课程](https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/assets/8240984/faa166c7-3097-4b91-a19e-ae05b6dafb68)
+| 分路       | 代表英雄 | 经典台词                               | 故事背景                                                     | 被动技能                                                     |
+| ---------- | -------- | -------------------------------------- | ------------------------------------------------------------ | :----------------------------------------------------------- |
+| **发育路** | 黄忠     | 正义或许会迟到，但绝不会忘记砸到你头顶 | 黄忠，字汉升，东汉末年的猛将之一。早年追随刘表，刘表死后，成为长沙太守韩玄的部将 ... ... | 黄忠普攻时可以提高6-12点攻击和0.75%-1.5%暴击率，持续1.5秒，此效果最多可叠加5层。黄忠处于炮台形态时享受双倍增益效果，黄忠在进入或退出炮台形态时，刷新身上留存的增益效果持续时间并将增益系数替换成当前形态的倍数。 |
+| **中路**   | 妲己     | 请尽情吩咐妲己，主人\n来和妲己玩耍吧   | 纣王身边妲己实际上是狐狸精。她蛊惑纣王干下了种种祸害百姓、残害忠良的倒行逆施，最终断送了商朝的天下 ... ... | 妲己技能命中敌人会减少目标30~72点法术防御，持续3秒，最多叠加3层 |
+| **打野**   | 赵云     | 心怀不惧，才能翱翔于天际               | 三国时的蜀汉名将。常山真定人，字子龙。东汉末年大乱，群雄并起之时，起兵归于公孙瓒。公孙瓒败亡，投奔刘备，时刘备未成气候 ... ... | 赵云每损失3%最大生命就会获得1%减伤                           |
+| **对抗路** | 老夫子   | 老夫年少时，也曾像他们一样，征战四方   | 历史原型为儒家学派创始人孔子，他广收门徒，周游列国，号称三千弟子，传播其学说 ... ... | 老夫子普通攻击命中会增加1点训诫值，最多叠加5点，叠满后会获得强化自身，持续5秒；强化时老夫子会增加60点移动速度和25%攻击速度，同时普通攻击将会附带60点真实伤害，每次攻击能够减少1秒圣人训诫和举一反三的冷却时间 |
+| **游走**   | 庄周     | 蝴蝶是我，我就是蝴蝶                   | 庄周，一般人称庄子。是战国时的思想家，跟老子一道，为道家的代表人物之一，后世老庄并称。其学说崇尚自然，推崇自由 ... ... | 在自然梦境中，庄周解除并免疫所有控制效果，获得15%减伤，并增加15%移速，持续2秒。庄周每6秒进入一次自然梦境 |
 
-![三等奖](./240708Third_Prize.jpg)
+## 🔊介绍
 
-<div style="display: flex; align-items: flex-start;">
-  <img src="./240708Third_Prize.jpg" alt="Long Image" style="max-height: 200px; margin-right: 10px;">
-  <img src="https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/assets/8240984/faa166c7-3097-4b91-a19e-ae05b6dafb68" alt="Tall Image" style="max-height: 200px;">
-  <img src="https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/assets/8240984/e550d6cf-a3fe-47ba-b351-5ef765e30472" alt="Tall Image" style="max-height: 200px;">
-</div>
--->
-<table>
-  <tr>
-    <td style="text-align: center;">
-      <img src="./240708Third_Prize.jpg" alt="Long Image" style="max-height: 400px; width: auto; display: block; margin: 0 auto;">
-       <p style="text-align: center;"> 欢迎右侧扫码加入第三期AI实战营，一起迭代开发王者项目！</p>
-       <p style="text-align: center;"> 微信请加 kwchg0901 , 并注明来意~</p>
-    </td>
-<!--      
-     <td style="text-align: center;">
-      <div style="text-align: center;">
-        <img src="https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/assets/8240984/faa166c7-3097-4b91-a19e-ae05b6dafb68" alt="Tall Image" style="display: block; margin: 0 auto;">
-      </div>
-    </td> 
--->
-    <td style="text-align: center;">
-      <img src="https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/assets/8240984/e550d6cf-a3fe-47ba-b351-5ef765e30472" alt="Tall Image" style="max-height: 1100px; width: auto; display: block; margin: 0 auto;">
-    </td>
-  </tr>
-</table>
-
-## 来自王者荣耀的多模态数据集
-
-- [HoK_multi-modal_toy_data 文档 (**英文**)](./HoK_multi-modal_toy_data/readme_EN.md)
-- [HoK_multi-modal_toy_data 文档 (**中文**)](./HoK_multi-modal_toy_data/readme.md)
-
-## Honor of Kings - RolePlay
-
-### [**Honor-of-Kings_RolePlay：峡谷小狐仙 —— 多模态角色扮演游戏助手**](https://github.com/YongXie66/Honor-of-Kings_RolePlay)
-
-- [本地路径：./HoK_RolePlay](./HoK_RolePlay)
-
-![img](./HoK_RolePlay/datasets/妲己Images/时之奇旅.jpg)
-
-### 🔊介绍
+**项目主页**：[峡谷小狐仙--多模态角色扮演聊天小助手](https://github.com/YongXie66/Honor-of-Kings_RolePlay)
 
 本项目基于**书生浦语🌟InternLM2**模型，通过构造生成训练数据，采用**Xtuner微调**的方式，打造了一个**王者荣耀**领域的**角色扮演**聊天机器人--**峡谷小狐仙**，同时结合🌟**ASR**技术实现**语音输入**、🌟**RAG 检索增强生成**技术实现**生成王者英雄有关信息**、🌟**TTS**技术实现**声音克隆**和**语音输出**、🌟**数字人**技术实现了**视频输出**功能。**峡谷小狐仙**将王者荣耀手游中特定游戏角色妲己的形象带入书生浦语语言大模型，在实现①知识输出的同时，也实现②角色扮演的效果：
 
@@ -62,7 +27,7 @@
    - 采用符合游戏人物妲己的性格特点、语气、行为方式和表达方式来回复问题
    - 目前实现了英雄妲己的角色扮演，以后会支持更多的英雄角色，也可以根据使用的需求设定创建属于自己的英雄，语音音色和添加特定的对话方式
 
-![Architecture](./HoK_RolePlay/assets/tech_route4.svg)
+![Architecture](assets/tech_route4.svg)
 
 ### 功能亮点
 
@@ -72,7 +37,7 @@
 - TTS 文字转语音＋语音克隆📢：模型模拟妲己的声音，并将LLM的回答以音频形式输出
 - 数字人👁：虚拟小狐仙在线陪伴
 
-### 📺demo
+## 📺demo
 
 - **OpenXLab在线体验地址**：https://openxlab.org.cn/apps/detail/YongXie66/DaJi_RolePlay
 - **视频地址**：https://www.bilibili.com/video/BV1JuVJe1EqT
@@ -82,18 +47,18 @@
 
 效果示例：
 
-| 文字/语音提问 |                          [数字人回答](HoK_RolePlay/assets/你知道如何应对压力吗.mp4)                         |
+| 文字/语音提问 |                          数字人回答                          |
 | :-----------: | :----------------------------------------------------------: |
 |    你知道如何应对压力吗     | <video src="https://github.com/YongXie66/Honor-of-Kings_RolePlay/assets/88486439/c27ebda4-8a96-45a3-841b-fc3de57602d6"></video> |
 
-### 📰News
+## 📰News
 
 - [2024.06.19] 语音输入支持速度更快、对中文更加友好的**FunASR**
 - [2024.06.16] 本项目初版完成！支持 **ASR + RAG + TTS + 数字人**
 
-### 行动
+## 行动
 
-#### 🔎数据收集
+### 🔎数据收集
 
 王者荣耀数据的收集，来源于**兄弟项目**[Honor_of_Kings_Multi-modal_Dataset](https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/)，欢迎大家前去star~
 
@@ -126,7 +91,7 @@
             ... ...
 ```
 
-#### 🧾数据生成
+### 🧾数据生成
 自我认知数据集使用大模型生成，由 【自我介绍 + 背景关系 + 打招呼用词 + 主要功能介绍】组成，其中自我介绍和背景关系部分参考的是妲己的 `性格特点`，`角色背景`， 以及 `英雄故事`。`打招呼用词` 以及 `主要功能介绍` 则是我们团队自己定义的，回答风格则是参考`妲己台词`。
 
 自我认知数据集例子：
@@ -150,28 +115,28 @@
 ]
 ```
 
-#### 🧠InternLM2微调
+### 🧠InternLM2微调
 
-本项目使用 [ Xtuner ](https://github.com/InternLM/xtuner)微调工具，采用多轮对话训练格式，对InternLM2_chat_7b模型进行QLoRa微调。数据集包含1000条左右多轮对话数据，通过QLoRa策略优化模型的对话生成能力。该策略利用量化低秩近似，提升了模型的效率和性能，使其更好地理解和生成自然流畅的对话。微调后的模型不仅能处理复杂对话情境，还能提供更个性化和知识性的回答，显著提升用户的互动体验。
+本项目使用 [xtuner ](https://github.com/InternLM/xtuner)微调工具，采用多轮对话训练格式，对InternLM2_chat_7b模型进行QLoRa微调。数据集包含1000条左右多轮对话数据，通过QLoRa策略优化模型的对话生成能力。该策略利用量化低秩近似，提升了模型的效率和性能，使其更好地理解和生成自然流畅的对话。微调后的模型不仅能处理复杂对话情境，还能提供更个性化和知识性的回答，显著提升用户的互动体验。
 
-#### 🎤自动语音识别(ASR)
+### 🎤自动语音识别(ASR)
 
 ASR技术用于将用户的语音输入转换为文本。本项目支持用户通过麦克风在线录入音频，或者上传本地已有的音频文件。我们采用了开源的 [whisper](https://github.com/openai/whisper) 模型，该模型在多个语音识别任务上表现优异，能够高效、准确地将语音转化为文本。这些转换后的文本将作为输入，传递给LLM。
 
 [2024.06.19]更新：语音输入支持速度更快、对中文更加友好的FunASR
 
-#### 📢文本转语音(TTS) + 语音克隆
+### 📢文本转语音(TTS) + 语音克隆
 
 TTS技术可以将文本转化为自然的语音输出。在本项目中，我们集成了强大的少样本语音转换与语音克隆方法 [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)，利用其 `few-shot TTS`功能，通过收集王者荣耀英雄角色妲己的台词语音来微调 [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) 模型，实现了对妲己音色的克隆。能够将 LLM 输出的文本回答转换为语音，并以妲己的声音进行播报。
 
-#### 👁数字人
+### 👁数字人
 
 数字人技术使得虚拟角色可以以更真实的方式与用户互动。本项目集成了 [SadTalker](https://github.com/OpenTalker/SadTalker) 技术，一种从音频中学习生成3D运动系数，使用全新的3D面部渲染器来生成头部运动，并生成高质量的视频的方法。通过输入上一步 `TTS 输出的音频文件`以及`妲己的海报`，可以生成`动态说话视频`。这使得虚拟小狐仙不仅可以用文本、声音与用户交流，还可以以虚拟人的模式进行互动。
 
-#### 📚RAG
+### 📚RAG
 本项目采用的是基于 Langchain 的 `Metadata` RAG 方案。Metadata 结构是【英雄名 + 被动/一技能/二技能/三技能/英雄故事/历史】 ，例如：【上官婉儿二技能】，对应的 Document 就是 `技能名称` 和 `技能介绍`。RAG 由以下用户提问关键词触发：【"被动", "一技能", "二技能", "三技能", "英雄故事", "历史"】。
 
-### 使用指南
+## 使用指南
 
 Clone the repo
 
@@ -198,9 +163,9 @@ download models
 apt install git
 apt install git-lfs
 
-# LLM,funasr, gpt_sovits, sadtalker 相关模型下载
+# LLM, funasr, gpt_sovits, sadtalker 相关模型下载
 git clone https://code.openxlab.org.cn/YongXie66/DaJi_RolePlay.git ./DaJi_RolePlay
-bash ./DaJi_RolePlay/InternLM2/InternLM2_7b/download.sh
+bash InternLM2/InternLM2_7b/download.sh
 
 # 模型位置移动
 mv ./DaJi_RolePlay/GPT_SoVITS/pretrained_models/* ./GPT_SoVITS/pretrained_models/
@@ -218,28 +183,30 @@ Web UI 启动 !
 python webui.py
 ```
 
-### web UI
+## web UI
 
 目前 Web UI 中提供了**Chatty_DaJi** 和 **Lively_DaJi** 两种对话模式
 
 - **Chatty_DaJi：InternLM2-Chat-7b 微调后的基础小狐仙对话模型 + ASR** 
 
-![image-20240613235252894](./HoK_RolePlay/assets/image-20240613235252894.png)
+![image-20240613235252894](assets/image-20240613235252894.png)
 
 - **Lively_DaJi：InternLM2-Chat-7b 微调 + ASR + TTS + voice clone + 数字人** 
 
-![image-20240614000226211](./HoK_RolePlay/assets/image-20240614000226211.png)
+![image-20240614000226211](assets/image-20240614000226211.png)
 
-### 项目成员
+
+
+## 项目成员
 
 |      | 成员                                        | 贡献                                                         |
 | ---- | ------------------------------------------- | ------------------------------------------------------------ |
 | 主创 | [谢勇](https://github.com/YongXie66/)       | 项目负责人                                                   |
 | 主创 | [程宏](https://github.com/chg0901)          | [王者多模态项目](https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/)总发起人、项目负责人 |
-| 共创 | [Wong Tack Hwa](https://github.com/tackhwa) | RAG部分开发，整体项目测试 |
+| 共创 | [Wong Tack Hwa](https://github.com/tackhwa) |                                                              |
 | 共创 | [沈飞](https://github.com/shenfeilang)      | 王者荣耀相关数据集爬取；微调数据集生成与预处理；角色扮演模型微调与量化 |
 
-### 💖致谢
+## 💖致谢
 
 感谢上海人工智能实验室推出的 **[书生·浦语大模型实战营](https://openxlab.org.cn/models/InternLM/subject)** 学习活动！
 
@@ -255,146 +222,3 @@ python webui.py
 - [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)
 - [SadTalker](https://github.com/OpenTalker/SadTalker)
 
-### 兄弟项目
-
-- [**Honor-of-Kings_Agent**：王者荣耀助手: Agent对话](https://github.com/GoAlers/Honor-of-Kings_Agent)
-- [**HoK-BP-LLM**：王者荣耀 对局策略推荐小助手](https://github.com/YuWangyin/HoK-BP-LLM)
-
-### 数据调整（含兄弟项目[HoK-BP-LLM](https://github.com/YuWangyin/HoK-BP-LLM)数据引入）
-
-```bash
-.
-|   README.md
-|   README_CN.md
-|   tree.txt
-|   tree_simple.txt
-|
-+---王者荣耀KPL历年比赛数据              
-|       README.md
-|       WZRY.csv
-|
-+---王者荣耀攻略                        
-|       WZtrick.jsonl 
-|
-+---crawler_data                       
-|       image_0.jpg
-|       image_1.jpg
-......
-|       pvp_picture_picture1.jpg
-......
-|       text_content.csv
-|     
-+---HoK_multi-modal_toy_data
-|   |   readme.md
-|   |   readme_EN.md
-|   |
-|   +---英雄Q版头像
-|   |
-|   +---英雄档案图片
-|   |       
-|   +---英雄海报
-|   |
-|   \---英雄语音和对应台词
-|       |   readme.md
-|       |
-|       +---安琪拉
-|       |   |   142_安琪拉__乘龙·聚宝船.txt
-|       |   |   142_安琪拉__心灵骇客.txt
-|       |   |   142_安琪拉__时之奇旅.txt
-|       |   |   142_安琪拉__暗夜萝莉.txt
-|       |   |   142_安琪拉__追逃游戏.txt
-|       |   |   142_安琪拉__魔法小厨娘.txt
-|       |   |   readme.md
-|       |   |
-|       |   +---142_安琪拉__乘龙·聚宝船
-...................
-|       |   |       142_安琪拉_西望灵洲选自广东通志.mp3
-|       |   |       142_安琪拉_问尔能奈浪涛何.mp3
-|       |   |       142_安琪拉_顺风得利,祀海祈祥.mp3
-|       |   |       142_安琪拉_须知黄金未是宝,机勇情义胜珠珍改编自王梵.mp3
-|       |   |       142_安琪拉_驾海相迎.mp3
-|       |   |
-|       |   +---142_安琪拉__心灵骇客
-|       |   |
-|       |   +---142_安琪拉__时之奇旅
-|       |   |
-|       |   +---142_安琪拉__暗夜萝莉
-|       |   |
-|       |   +---142_安琪拉__追逃游戏
-|       |   |
-|       |   \---142_安琪拉__魔法小厨娘
-|       |
-|       +---艾琳
-|       |
-|       +---阿古朵
-|       |
-|       \---阿轲
-|
-\---text_data
-        OriginalData_inChinese.xlsx
-        processed_cn.jsonl
-        processed2_cn.jsonl
-        README.md
-        README_CN.md
-        text_processing.py
-        text_processing2.py
-        text_processing3.py
-
-```
-
-### 简单文件结构
-
-```bash
-│   王者荣耀故事英雄与技能-toy.xlsx
-├───英雄Q版头像
-├───英雄档案图片
-├───英雄海报
-├───英雄皮肤
-│   ├───安琪拉
-│   ├───艾琳
-│   ├───阿古朵
-│   └───阿轲
-└───英雄语音和对应台词
-    ├───安琪拉
-    │   ├───142_安琪拉__乘龙·聚宝船
-    │   ├───142_安琪拉__心灵骇客   
-    │   ├───142_安琪拉__时之奇旅
-    │   ├───142_安琪拉__暗夜萝莉
-    │   ├───142_安琪拉__追逃游戏
-    │   └───142_安琪拉__魔法小厨娘
-    ├───艾琳
-    │   ├───155_艾琳__奇遇舞章
-    │   ├───155_艾琳__精灵之舞
-    │   └───155_艾琳__觅芳踪
-    ├───阿古朵
-    │   ├───533_阿古朵__山林之子
-    │   ├───533_阿古朵__江河有灵
-    │   └───533_阿古朵__顽趣
-    └───阿轲
-        ├───116_阿轲__信念之刃
-        ├───116_阿轲__暗夜猫娘
-        ├───116_阿轲__节奏热浪
-        └───116_阿轲__迷踪丽影
-```
-
-## 王者荣耀文本数据
-
-[文本数据](https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/tree/main/text_data)  
-
-## 未来计划
-
-我将尝试使用这些数据通过**InternLM**使用**LLM finetuning**和**RAG**技术进行玩耍
-
-## 更多中文信息
-
-关于这个数据集和未来项目的详细信息，请参考以下两个知乎链接
-
-1. [王者荣耀问答助手[大模型实战营 结题项目][更新更多数据，计划采用RAG方法进行多模态检索搜索查询]](https://zhuanlan.zhihu.com/p/683656455)  
-2. [XTuner 大模型单卡低成本微调实战[大模型实战营04]【最后是王者荣耀有关的项目】](https://zhuanlan.zhihu.com/p/682241646)
-
-## 兄弟项目， 欢迎关注
-
-1. [**Honor-of-Kings_RolePlay**](https://github.com/YongXie66/Honor-of-Kings_RolePlay)
-2. [**食神**](https://github.com/SmartFlowAI/TheGodOfCookery)
-3. [**EmoLLM**](https://github.com/SmartFlowAI/EmoLLM)
-4. [**矿途智护者**](https://github.com/yaosenJ/CoalQA)
