@@ -327,8 +327,8 @@ if __name__ == "__main__":
     # LLM模型下载
     # download(model_repo=LLM_openxlab_path,
     #      output='./InternLM2/InternLM2_7b')
-    os.system('apt install git')
-    os.system('apt install git-lfs')
+    # os.system('apt install git')
+    # os.system('apt install git-lfs')
     os.system(f'git clone https://code.openxlab.org.cn/shenfeilang/Honor-of-Kings_RolePlay.git {llm_path}')
     os.system(f'cd {llm_path} && git lfs pull')
 
@@ -357,6 +357,7 @@ if __name__ == "__main__":
         error_print("如果使用InternLM2_DaJi，请先下载InternLM2模型和安装环境")
     
     try:
+        os.system('pip install -r VITS/requirements_vits.txt')
         from VITS import *
         vits = GPT_SoVITS()
         gpt_path = "DaJi-e15.ckpt"
