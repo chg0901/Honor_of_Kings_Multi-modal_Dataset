@@ -9,6 +9,7 @@ from src.cost_time import calculate_time
 #import pdb
 os.environ["GRADIO_TEMP_DIR"]= './temp'
 os.environ["WEBUI"] = "true"
+os.environ['LD_LIBRARY_PATH'] = '/usr/local/lib:/usr/lib:' + os.environ.get('LD_LIBRARY_PATH', '')
 
 
 def get_title(title = ''):

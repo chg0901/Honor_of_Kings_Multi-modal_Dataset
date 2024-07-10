@@ -1,4 +1,5 @@
 git
 git-lfs
 ffmpeg
-sox libsox-fmt-all
+sox 
+libsox-fmt-all
