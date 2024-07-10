@@ -49,7 +49,7 @@ pypinyin
 pyopenjtalk
 g2p_en
 modelscope==1.10.0
-sentencepiece
+#sentencepiece
 chardet
 PyYAML
 psutil
