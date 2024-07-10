@@ -357,7 +357,7 @@ if __name__ == "__main__":
         error_print("如果使用InternLM2_DaJi，请先下载InternLM2模型和安装环境")
     
     try:
-        os.system('pip install -r VITS/requirements_vits.txt')
+        # os.system('pip install -r VITS/requirements_vits.txt')
         from VITS import *
         vits = GPT_SoVITS()
         gpt_path = "DaJi-e15.ckpt"
