@@ -5,8 +5,8 @@ import time
 from zhconv import convert
 from LLM import LLM
 from src.cost_time import calculate_time
-from rag.interface import load_chain
 import pdb
+from rag.interface import load_chain
 os.environ["GRADIO_TEMP_DIR"]= './temp'
 os.environ["WEBUI"] = "true"
 
@@ -132,9 +132,11 @@ def chat_response(system, message):
     response = llm.generate(message, system)
     return response
 
+
 def rag_response(message):
     response=rag_qa_chain({"query": message})["result"]
     return response
+
 
 def check_and_response(system, message, history, contain_history=False):
     if any(element in message for element in hero_list) and any(element in message for element in ["被动", "一技能", "二技能", "三技能", "英雄故事", "历史"]):
@@ -345,14 +347,14 @@ if __name__ == "__main__":
     except Exception as e:
         error_print(f"Error: {e}")
         error_print("如果使用InternLM2_DaJi，请先下载InternLM2模型和安装环境")
-        
+
     try:
          rag_qa_chain=load_chain(llm.model,llm.tokenizer)
          success_print("Success!!! RAG模块加载成功，默认使用InternLM2_DaJi模型")
     except Exception as e:
         error_print(f"Error: {e}")
         error_print("如果使用InternLM2_DaJi，请先下载InternLM2模型和安装环境，以及langchain环境")
-
+    
     try:
         from VITS import *
         vits = GPT_SoVITS()
