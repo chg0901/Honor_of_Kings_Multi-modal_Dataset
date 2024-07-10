@@ -50,4 +50,5 @@ torchaudio
 openxlab
 langchain==0.1.8
 chromadb==0.5.0
+-r VITS/requirements_vits.txt
 # gfpgan
