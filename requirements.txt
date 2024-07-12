@@ -22,7 +22,8 @@ einops
 sentencepiece
 google-generativeai
 tiktoken
-protobuf==3.19.6
+#protobuf==3.19.6
+protobuf
 google-api-python-client==2.126.0
 g4f
 transformers==4.34.0
