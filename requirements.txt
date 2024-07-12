@@ -26,7 +26,8 @@ tiktoken
 protobuf
 google-api-python-client==2.126.0
 g4f
-transformers==4.34.0
+#transformers==4.34.0
+transformers==4.37.0
 transformers_stream_generator==0.0.4 
 peft 
 deepspeed
