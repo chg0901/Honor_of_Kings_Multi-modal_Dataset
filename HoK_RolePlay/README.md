@@ -166,11 +166,11 @@ apt install git-lfs
 # LLM, funasr, gpt_sovits, sadtalker 相关模型下载
 git clone https://code.openxlab.org.cn/YongXie66/DaJi_RolePlay.git ./DaJi_RolePlay
 bash InternLM2/InternLM2_7b/download.sh
+bash FunASR/download.sh
 
 # 模型位置移动
 mv ./DaJi_RolePlay/GPT_SoVITS/pretrained_models/* ./GPT_SoVITS/pretrained_models/
 mv ./DaJi_RolePlay/checkpoints/* ./checkpoints/
-mv ./DaJi_RolePlay/FunASR/* ./FunASR/
 mv ./DaJi_RolePlay/gfpgan/* ./gfpgan/
 
 # 生成 RAG 依赖的 Chroma 数据库
@@ -203,7 +203,7 @@ python webui.py
 | ---- | ------------------------------------------- | ------------------------------------------------------------ |
 | 主创 | [谢勇](https://github.com/YongXie66/)       | 项目负责人                                                   |
 | 主创 | [程宏](https://github.com/chg0901)          | [王者多模态项目](https://github.com/chg0901/Honor_of_Kings_Multi-modal_Dataset/)总发起人、项目负责人 |
-| 共创 | [Wong Tack Hwa](https://github.com/tackhwa) |                                                              |
+| 共创 | [Wong Tack Hwa](https://github.com/tackhwa) | RAG部分开发，整体项目测试                                    |
 | 共创 | [沈飞](https://github.com/shenfeilang)      | 王者荣耀相关数据集爬取；微调数据集生成与预处理；角色扮演模型微调与量化 |
 
 ## 💖致谢
