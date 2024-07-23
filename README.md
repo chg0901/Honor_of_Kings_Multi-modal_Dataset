@@ -187,6 +187,7 @@ conda activate hok-roleplay
 
 pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
 
+cd ~/Honor-of-Kings_RolePlay
 pip install -r requirements.txt
 
 conda install -q ffmpeg
@@ -195,26 +196,37 @@ conda install -q ffmpeg
 download models
 
 ```bash
+# apt-get update
 apt install git
 apt install git-lfs
+# git-lfs 必须先安装，否则无法下载大文件（后续操作中的模型文件）
 
-# LLM,funasr, gpt_sovits, sadtalker 相关模型下载
+# LLM, funasr, gpt_sovits, sadtalker 相关模型下载
+cd ~
 git clone https://code.openxlab.org.cn/YongXie66/DaJi_RolePlay.git ./DaJi_RolePlay
-bash ./DaJi_RolePlay/InternLM2/InternLM2_7b/download.sh
+bash ./DaJi_RolePlay/InternLM2/InternLM2_7b/download.sh   # 下载微调好的 InternLM2_7b 小狐仙模型文件夹到主目录
+bash ./DaJi_RolePlay/FunASR/download.sh                   # 下载 FunASR 模型文件夹到主目录
 
 # 模型位置移动
-mv ./DaJi_RolePlay/GPT_SoVITS/pretrained_models/* ./GPT_SoVITS/pretrained_models/
-mv ./DaJi_RolePlay/checkpoints/* ./checkpoints/
-mv ./DaJi_RolePlay/FunASR/* ./FunASR/
-mv ./DaJi_RolePlay/gfpgan/* ./gfpgan/
+mv ./InternLM2/ ./Honor-of-Kings_RolePlay/
+mv ./FunASR/* ./Honor-of-Kings_RolePlay/FunASR
+mv ./DaJi_RolePlay/GPT_SoVITS/pretrained_models/* ./Honor-of-Kings_RolePlay/GPT_SoVITS/pretrained_models/
+mv ./DaJi_RolePlay/checkpoints/* ./Honor-of-Kings_RolePlay/checkpoints/
+mv ./DaJi_RolePlay/gfpgan/* ./Honor-of-Kings_RolePlay/gfpgan/
 
 # 生成 RAG 依赖的 Chroma 数据库
-python Honor-of-Kings_RolePlay/rag/generate_chroma_db.py
+cd ~/Honor-of-Kings_RolePlay
+python ./rag/generate_chroma_db.py
+# 执行上一条命令时，如果遇到如下错误：
+# RuntimeError: Failed to import transformers.trainer_callback because of the following error (look up to see its traceback):
+# cannot import name 'split_torch_state_dict_into_shards' from 'huggingface_hub'
+# 解决方法：pip install --upgrade huggingface_hub
 ```
 
 Web UI 启动 !
 
 ```bash
+cd ~/Honor-of-Kings_RolePlay
 python webui.py
 ```
 
