@@ -337,16 +337,22 @@ class GPT_SoVITS:
         self.t2s_model.eval()
         total = sum([param.nelement() for param in t2s_model.parameters()])
         print("Number of parameter: %.2fM" % (total / 1e6))
-        
+
         dict_s2 = torch.load(sovits_path, map_location="cpu")
         self.hps = dict_s2["config"]
         self.hps = DictToAttrRecursive(self.hps)
         self.hps.model.semantic_frame_rate = "25hz"
+
+        if dict_s2['weight']['enc_p.text_embedding.weight'].shape[0] == 322:
+            self.hps.model.version = "v1"
+        else:
+            self.hps.model.version = "v2"
+        print(f"模型版本: {self.hps.model.version}")
         vq_model = SynthesizerTrn(
             self.hps.data.filter_length // 2 + 1,
             self.hps.train.segment_size // self.hps.data.hop_length,
             n_speakers=self.hps.data.n_speakers,
-            **self.hps.model
+            **vars(self.hps.model)
         )
         if ("pretrained" not in sovits_path):
             del vq_model.enc_q

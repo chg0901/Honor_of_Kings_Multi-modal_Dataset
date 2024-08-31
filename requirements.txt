@@ -59,3 +59,4 @@ jieba_fast
 jieba
 LangSegment
 # gfpgan
+torch==2.1.0
